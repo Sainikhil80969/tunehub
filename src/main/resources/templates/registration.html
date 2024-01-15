@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune hub : REGISTRATION</title>
+    <style type="text/css">
+       div{
+       height:400px;
+       width:400px;
+       background-color: #849DAB;
+       display : flex;
+       justify-content : center;
+       align-items: center;
+       margin:auto;
+       }
+       label,input{
+       margin-top:30px;
+       padding:5px;
+       }
+    </style>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <h1 style="text-align: center">User REGISTRATION</h1>
+    <div>
+	<form action="registration" method="post">
+		<label>User name :</label> 
+		<input type="text" name="username" /> 
+		<br />
+		<label>Email :</label> 
+		<input type="email" name="email" /> 
+		<br /> 
+		<label>Password :</label> 
+		<input type="password" name="password" /> 
+		<br /> 
+		<label>Gender :</label> 
+		M<input type="radio" name="gender" value="male" /> 
+		F<input type="radio" name="gender" value="female" /> 
+		O<input type="radio" name="gender" value="other" /> 
+		<br /> 
+		<label>Role :</label> 
+   Admin<input type="radio" name="role" value="admin" /> 
+Customer<input type="radio" name="role" value="customer" /> 
+		<br /> 
+		<label>Address</label>
+		<textarea name="address"></textarea>
+		<br /> 
+		<input type="submit" value="register" style="text-align:center" />
+	</form>
+	</div>
+</body>
+</html>

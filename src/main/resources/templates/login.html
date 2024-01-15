@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune hub : LOGIN</title>
+   <link rel="stylesheet" th:href="@{/css/style.css}">
+   
+     <style type="text/css">
+       div{
+       height:400px;
+       width:400px;
+       background-color: #849DAB;
+       display : flex;
+       justify-content : center;
+       align-items: center;
+       margin:auto;
+       }
+       label,input{
+       margin-top:30px;
+       padding:5px;
+       }
+     </style>
+</head>
+<body>
+    <h1 style="text-align: center">USER LOGIN</h1>
+    <div>
+    <form action="validate" method="post">
+       <label>Email :</label> 
+	   <input type="email" name="email" /> 
+	   <br />
+	   <label>Password :</label> 
+	   <input type="password" name="password" /> 
+	   <br />
+	   <input type="submit" value="LOGIN" />
+	</form>  
+	</div> 
+</body>
+</html>
